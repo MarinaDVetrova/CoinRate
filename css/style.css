@@ -38,6 +38,9 @@ ul.currencies {
   height: 500px;
   background-color: #00486F;
 }
+ul.currencies li {
+  background-color: #ffffff;
+}
 .add-currency-btn {
   background-color: #00106f;
   color: #fff;
