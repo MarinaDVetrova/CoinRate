@@ -1,0 +1,22 @@
+body {
+  background: #002341;
+}
+h1
+{
+  color: #ffffff;
+  text-align: center;
+  font-size: 78px;
+  font-family: Roboto;
+}
+p
+{
+  color: #ffffff;
+  text-align: center;
+  font-size: 78px;
+}
+input
+{
+  color: #ffffff;
+  text-align: center;
+  font-size: 38px;
+}
