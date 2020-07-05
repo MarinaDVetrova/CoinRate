@@ -1,28 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  font-size: 16px;
+}
 body {
+  font-family: 'Montserrat', sans-serif;
   background: #002341;
+  color: #ffffff;
 }
-h1
-{
+.container {
+  width: 500px;
+  margin: 20px auto;
+}
+.header {
+  background-color: #55d7bf;
+  text-align: center;
+  padding: 1.25rem;
+}
+.header h1 {
+  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   text-align: center;
-  font-size: 78px;
-  font-family: Roboto;
+  font-size: 2.25rem;
 }
-p
-{
-  color: #ffffff;
-  text-align: center;
-  font-size: 78px;
+.date {
+  background-color: #222;
+  text-align: right;
+  font-size: 0.75rem;
+  padding: 0.75rem 2rem 0.75rem 0;
 }
-input
-{
-  color: #ffffff;
-  text-align: center;
-  font-size: 38px;
+ul.currency {
+  height: 500px;
+  background-color: #222;
+}
+.add-currency-btn {
+  background-color: #444;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-top: 3px solid #fff;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.25s;
+
 }
