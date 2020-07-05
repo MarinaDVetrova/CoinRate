@@ -4,22 +4,39 @@
     <meta charset="utf-8">
     <title>CoinRate</title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/rate.js"></script>
+
   </head>
   <body>
     <header class="site-header">
       <h1>USD dollar</h1>
       <p>
         <label for="">$</label>
-        <input type="number" id="input" oninput="coinrate(this.value)" onchange="coinarate(this.value)" name="" value="">
+        <input type="number" name="usd" required>
       </p>
       <p>
-        RUB: <span id="output"> </span>
+        EURO: <span id="euro"> </span>
+      </p>
+      <p>
+        BTC: <span id="btc"> </span>
       </p>
     </header>
-    <main>
-    </main>
-    <footer class="site-footer">
-    </footer>
+    <div class="converter">
+      <div class="header">
+        <h1>USD dollar</h1>
+      </div>
+      <div class="date">
+        5.07.2020
+      </div>
+      <ul class="currency">
+
+      </ul>
+      <ul class="add-currency-list">
+
+      </ul>
+      <button class="add-currency-btn">
+        Add currency
+      </button>
+    </div>
+  <script type="text/javascript" src="js/rate.js"></script>
   </body>
 </html>

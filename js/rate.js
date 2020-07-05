@@ -1,4 +1,8 @@
 function coinrate(valNum) {
-  document.getElementById('input').innerHTML = valNum = 66
-  document.getElementById('output').innerHTML = resalt;
-}
+  if (converter.usd.value <= 0)
+  window.alert ('');
+    else {
+      document.getElementById('euro').value = (valNum/23);
+      document.getElementById('btc').value = (valNum/53);
+    }
+  }
