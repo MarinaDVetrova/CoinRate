@@ -14,7 +14,7 @@ body {
   color: #ffffff;
 }
 .container {
-  width: 500px;
+
   margin: 20px auto;
 }
 .header {
@@ -47,11 +47,12 @@ ul.currencies li:nth-last-child {
   margin-bottom: 0;
 }
 ul.currencies li.base-currency {
-  background-color: #ffffff;
+  background-color: #001522;
 }
 .flag {
   height: 40px;
   width: 60px;
+  object-fit: cover;
   border: 1px solid #ffffff;
   vertical-align: top;
 }
