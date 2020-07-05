@@ -10,17 +10,19 @@ html {
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #ffffff;
+  background: #00106f;
   color: #ffffff;
 }
 .container {
-
-  margin: 20px auto;
+  margin: auto;
+  user-select: none;
+  overflow-x: hidden;
+  position: relative;
 }
 .header {
   background-color: #000522;
   text-align: center;
-  padding: 1.75rem;
+  padding: 1rem;
 }
 .header h1 {
   font-size: 2.25rem;
@@ -32,9 +34,10 @@ body {
   padding: 0.75rem 2rem 0.75rem 0;
 }
 ul.currencies {
-  height: 500px;
+  height: calc(100vh - 40px - 100px - 30px);
   background-color: #00486F;
   padding: 0 1.5rem 1rem 1.5rem;
+  overflow-y: auto;
 }
 ul.currencies li {
   background-color: #000522;
@@ -42,6 +45,7 @@ ul.currencies li {
   list-style: none;
   padding: 1rem 1rem 0.75rem 1rem;
   margin-bottom: 1rem;
+  position: relative;
 }
 ul.currencies li:nth-last-child {
   margin-bottom: 0;
@@ -58,6 +62,44 @@ ul.currencies li.base-currency {
 }
 .info {
   display: inline-block;
+  width: 70%;
+}
+.info .input span {
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 2rem;
+  text-align: center;
+}
+.info .input input {
+  font-size: 1.5rem;
+  width: 75%;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+.info .currency-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+}
+.info .base-currency-rate {
+  font-size: 0.8rem;
+  margin-left: 2rem;
+}
+ul.currencies li .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+  color: #666666;
+  cursor: pointer;
+}
+ul.currencies li .close:hover {
+  color: #ffffff;
 }
 .add-currency-btn {
   background-color: #00106f;
