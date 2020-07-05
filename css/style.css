@@ -101,6 +101,15 @@ ul.currencies li .close {
 ul.currencies li .close:hover {
   color: #ffffff;
 }
+/* Scrollbar */
+ ul.currencies li::-webkit-crollbar {
+   width: 5px;
+ }
+ ul.currencies li::-webkit-crollbar-thumb {
+   width: 5px;
+   background-color: #666666;
+   border-bottom: 1rem solid #222222;
+ }
 .add-currency-btn {
   background-color: #00106f;
   color: #fff;
