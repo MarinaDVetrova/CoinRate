@@ -151,6 +151,7 @@ ul.add-currency-list li span {
   width: 100%;
   cursor: pointer;
   transition: background-color 0.25s;
+  position: relative;
 }
 .add-currency-btn:hover {
   background-color: #ffffff;
