@@ -110,6 +110,35 @@ ul.currencies li .close:hover {
    background-color: #666666;
    border-bottom: 1rem solid #222222;
  }
+ul.add-currency-list {
+  position: absolute;
+  bottom: 57px;
+  left: 0;
+  background-color: #f1f1f1;
+  color: #333333;
+  width: 100%;
+  height: 0;
+  overflow-y: auto;
+  transition: all 0.25s;
+}
+ul.add-currency-list li {
+  list-style: none;
+  padding: 0.75rem;
+  border-bottom: 1px solid #dddddd;
+}
+ul.add-currency-list li .disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+ul.add-currency-list li .flag {
+  width: 3rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+ul.add-currency-list li span {
+  margin-left: 1rem;
+  font-weight: bold;
+}
 .add-currency-btn {
   background-color: #00106f;
   color: #fff;
@@ -122,4 +151,10 @@ ul.currencies li .close:hover {
   width: 100%;
   cursor: pointer;
   transition: background-color 0.25s;
+}
+.add-currency-btn:hover {
+  background-color: #ffffff;
+}
+.add-currency-btn:hover + ul.add-currency-list {
+  height: calc(100vh - 40px - 100px - 30px);
 }
