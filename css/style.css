@@ -14,7 +14,8 @@ body {
   color: #ffffff;
 }
 .container {
-  margin: auto;
+  width: 500px;
+  margin: 20px auto;
   user-select: none;
   overflow-x: hidden;
   position: relative;
@@ -113,11 +114,11 @@ ul.currencies li .close:hover {
 ul.add-currency-list {
   position: absolute;
   bottom: 57px;
-  left: 0;
+  left: 105%;
   background-color: #f1f1f1;
   color: #333333;
   width: 100%;
-  height: 0;
+  height: calc(100vh - 40px - 100px - 30px);
   overflow-y: auto;
   transition: all 0.25s;
 }
@@ -153,9 +154,36 @@ ul.add-currency-list li span {
   transition: background-color 0.25s;
   position: relative;
 }
-.add-currency-btn:hover {
-  background-color: #ffffff;
+.add-currency-btn i {
+  position: absolute;
+  top: 0.6rem;
+  left: 30%;
+  font-size: 2rem;
+  opacity: 0;
+  transition: all 0.25s;
 }
-.add-currency-btn:hover + ul.add-currency-list {
-  height: calc(100vh - 40px - 100px - 30px);
+.add-currency-btn.open {
+  background-color: #535353;
+}
+.add-currency-btn.open i {
+  opacity: 1;
+  left: 1.25rem;
+}
+.add-currency-btn.open + ul.add-currency-list {
+  left: 0;
+}
+.add-currency-btn.open + ul.add-currency-list li:hover {
+  background-color: #dddddd;
+}
+@media (max-width: 600px) {
+  html { font-size: 14px; }
+  .container { width: 100%; margin: 0 auto; }
+  ul.currency { height: calc(100vh - 40px - 100px - 30px); }
+  .header h1 { font-size: 2rem; }
+  .flag { width: 3rem; height: 2rem; }
+  .info .input span { font-size: 1.25rem; width: 3.5rem; }
+  .info .currency-name { margin-left: 3.5rem; }
+  .info .base-currency-name { margin-left: 3.5rem; }
+  ul.add-currency-list { bottom: 48px; height: calc(100vh - 80px - 51px); }
+  .add-currency-btn i { left: 25%; top: 0.25rem; }
 }
