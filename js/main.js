@@ -6,7 +6,9 @@ const addCurrencyList = document.querySelector(".add-currency-list");
 const currencies = [
     {
       name: "US Dollar",
-      abbreviation
+      abbreviation: "USD",
+      symbol: "\u0024",
+      flagURL: "images/flags/us.svg",
     }
 ];
 
