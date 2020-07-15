@@ -21,7 +21,7 @@ body {
   position: relative;
 }
 .header {
-  background-color: #2d2d37;
+  background-color: #111c28;
   text-align: center;
   padding: 1.75rem;
 }
@@ -29,19 +29,19 @@ body {
   font-size: 2.25rem;
 }
 .date {
-  background-color: #55d7bf;
+  background-color: #222646;
   text-align: right;
   font-size: 0.75rem;
   padding: 0.75rem 2rem 0.75rem 0;
 }
 ul.currencies {
   height: calc(100vh - 40px - 100px - 40px - 58px);
-  background-color: #3d4650;
+  background-color: #222646;
   padding: 0 1.5rem 1rem 1.5rem;
   overflow-y: auto;
 }
 ul.currencies li {
-  background-color: #55d7bf;
+  background-color: #232a51;
   border-radius: 5px;
   list-style: none;
   padding: 1rem 1rem 0.75rem 1rem;
@@ -143,13 +143,12 @@ ul.add-currency-list li span {
 }
 
 .add-currency-btn {
-  background-color: #00f6a8;
+  background-image: linear-gradient(60deg, #c31e57 10%, #ac2056 50%, #712554 100%);
   color: #fff;
   padding: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
   border: none;
-  border-top: 3px solid #55d7bf;
   outline: none;
   width: 100%;
   cursor: pointer;
