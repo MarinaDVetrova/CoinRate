@@ -28,11 +28,15 @@ body {
 .header h1 {
   font-size: 1.5rem;
 }
+.banner {
+  background-color: #ffffff;
+  padding: 10px 10px 10px 10pxs;
+}
 .date {
   background-color: #222646;
   text-align: right;
   font-size: 0.75rem;
-  padding: 0.75rem 2rem 0.75rem 0;
+  padding: 0.75rem 2rem 1rem 0;
 }
 ul.currencies {
   height: calc(100vh - 40px - 100px - 40px - 58px);
