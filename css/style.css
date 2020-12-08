@@ -28,11 +28,6 @@ body {
 .header h1 {
   font-size: 1.5rem;
 }
-.banner {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 1.05rem;
-}
 .date {
   background-color: #222646;
   text-align: right;
