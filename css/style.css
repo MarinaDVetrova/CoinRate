@@ -141,10 +141,6 @@ ul.add-currency-list li span {
   margin-left: 1rem;
   font-weight: bold;
 }
-.add-currency-bunner {
-  background-image: href="images/icons/icon-128x128.png";
-  padding: 2rem;
-}
 .add-currency-btn {
   background-image: linear-gradient(60deg, #c31e57 10%, #ac2056 50%, #712554 100%);
   border: 1px solid #232a51;
