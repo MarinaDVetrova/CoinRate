@@ -30,7 +30,8 @@ body {
 }
 .banner {
   background-color: #ffffff;
-  padding: 10px 10px 10px 10pxs;
+  text-align: center;
+  padding: 1.05rem;
 }
 .date {
   background-color: #222646;
