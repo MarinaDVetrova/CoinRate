@@ -6,7 +6,7 @@ const currenciesList = document.querySelector(".currencies");
 
 const dataURL = "http://api.exchangeratesapi.io/v1/latest?access_key=83a18b6db1429b92a7a1293ecae5ac32";
 
-const initiallyDisplayedCurrencies = ["q","USD", "EUR", "GBP", "JPY", "RUB"];
+const initiallyDisplayedCurrencies = ["q","BTC", "RUB", "USD", "EUR", "GBP", "JPY"];
 let baseCurrency;
 let baseCurrencyAmount;
 
@@ -16,6 +16,12 @@ let currencies = [
     abbreviation: "q",
     symbol: "\u0024",
     flagURL: "http://www.geonames.org/flags/l/us.gif"
+  },
+  {
+    name: "BTC Bitcoin",
+    abbreviation: "BTC",
+    symbol: "\u20BF",
+    flagURL: "https://images-na.ssl-images-amazon.com/images/I/61kr79ewOIL._AC_SL1500_.jpg"
   },
   {
     name: "US Dollar",
