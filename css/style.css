@@ -10,7 +10,7 @@ html {
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #505562;
+  background-color: #dc1b59;
   color: #fff;
 }
 .container {
@@ -21,27 +21,27 @@ body {
   position: relative;
 }
 .header {
-  background-color: #2d2d37;
+  background-color: #111c28;
   text-align: center;
-  padding: 1.75rem;
+  padding: 1.05rem;
 }
 .header h1 {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
 }
 .date {
-  background-color: #222;
+  background-color: #222646;
   text-align: right;
   font-size: 0.75rem;
-  padding: 0.75rem 2rem 0.75rem 0;
+  padding: 0.75rem 2rem 1rem 0;
 }
 ul.currencies {
   height: calc(100vh - 40px - 100px - 40px - 58px);
-  background-color: #222;
+  background-color: #222646;
   padding: 0 1.5rem 1rem 1.5rem;
   overflow-y: auto;
 }
 ul.currencies li {
-  background-color: #2d2d37;
+  background-color: #232a51;
   border-radius: 5px;
   list-style: none;
   padding: 1rem 1rem 0.75rem 1rem;
@@ -52,7 +52,7 @@ ul.currencies li:last-child {
   margin-bottom: 0;
 }
 ul.currencies li.base-currency {
-  background-color: #264d73;
+  background-color: #111c28;
 }
 .flag {
   width: 60px;
@@ -109,7 +109,7 @@ ul.currencies::-webkit-scrollbar {
 }
 ul.currencies::-webkit-scrollbar-thumb {
   background-color: #2d2d37;
-  border-bottom: 1rem solid #222;
+  border-bottom: 1rem solid #55d7bf;
 }
 
 ul.add-currency-list {
@@ -141,15 +141,13 @@ ul.add-currency-list li span {
   margin-left: 1rem;
   font-weight: bold;
 }
-
 .add-currency-btn {
-  background-color: #00b386;
+  background-image: linear-gradient(60deg, #c31e57 10%, #ac2056 50%, #712554 100%);
+  border: 1px solid #232a51;
   color: #fff;
   padding: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
-  border: none;
-  border-top: 3px solid #222;
   outline: none;
   width: 100%;
   cursor: pointer;
@@ -166,7 +164,7 @@ ul.add-currency-list li span {
 }
 
 .add-currency-btn.open {
-  background-color: #d9534f;
+  background-color: #2bb59b;
 }
 .add-currency-btn.open i {
   opacity: 1;
@@ -182,13 +180,13 @@ ul.add-currency-list li span {
 @media (max-width: 600px) {
   html { font-size: 14px; }
   .container { width: 100%; margin: 0 auto; }
-  ul.currencies { height: calc(100vh - 83px - 34px - 51px); }
+  ul.currencies { height: calc(100vh - 70px - 30px - 30px); }
   .header h1 { font-size: 2rem; }
   .flag { width: 3rem; height: 2rem; }
   .info .input span { font-size: 1.25rem; width: 3.5rem; }
   .info .input input { font-size: 1.25rem; width: 76%;}
   .info .currency-name { margin-left: 3.5rem; }
   .info .base-currency-rate { margin-left: 3.5rem; }
-  ul.add-currency-list { bottom: 48px; height: calc(100vh - 80px - 51px); }
+  ul.add-currency-list { bottom: 40px; height: calc(100vh - 60px - 51px); }
   .add-currency-btn i { left: 25%; top:0.65rem; }
 }

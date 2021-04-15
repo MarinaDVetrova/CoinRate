@@ -4,13 +4,19 @@ const addCurrencyBtn = document.querySelector(".add-currency-btn");
 const addCurrencyList = document.querySelector(".add-currency-list");
 const currenciesList = document.querySelector(".currencies");
 
-const dataURL = "https://api.exchangeratesapi.io/latest";
+const dataURL = "http://api.exchangeratesapi.io/v1/latest?access_key=83a18b6db1429b92a7a1293ecae5ac32";
 
-const initiallyDisplayedCurrencies = ["USD", "EUR", "GBP", "JPY", "RUB"];
+const initiallyDisplayedCurrencies = ["q","USD", "EUR", "GBP", "JPY", "RUB"];
 let baseCurrency;
 let baseCurrencyAmount;
 
 let currencies = [
+  {
+    name: "qqq",
+    abbreviation: "q",
+    symbol: "\u0024",
+    flagURL: "http://www.geonames.org/flags/l/us.gif"
+  },
   {
     name: "US Dollar",
     abbreviation: "USD",
