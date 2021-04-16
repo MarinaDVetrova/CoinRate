@@ -18,7 +18,7 @@ let currencies = [
     flagURL: "http://www.geonames.org/flags/l/us.gif"
   },
   {
-    name: "BTC Bitcoin",
+    name: "Bitcoin",
     abbreviation: "BTC",
     symbol: "\u20BF",
     flagURL: "https://images-na.ssl-images-amazon.com/images/I/61kr79ewOIL._AC_SL1500_.jpg"
