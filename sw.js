@@ -14,27 +14,26 @@ const staticAssets = [
     'images/no-image.jpg'
 ];
 
-self.addEventListener('install', async event => {
-    const cache = await caches.open(staticCacheName);
-    await cache.addAll(staticAssets);
-    console.log('Service worker has been installed');
-});
+//install event
+self.addEventListener('install', evt => {
+  evt.waitUntil(
+    caches.open(staticCacheName).then( cache => {
+      console.log('caching cell assets');
+        cache.addAll(assets)
+    })
+  )
 
-self.addEventListener('activate', async event => {
-    const cachesKeys = await caches.keys();
-    const checkKeys = cachesKeys.map(async key => {
-        if (![staticCacheName, dynamicCacheName].includes(key)) {
-            await caches.delete(key);
-        }
-    });
-    await Promise.all(checkKeys);
-    console.log('Service worker has been activated');
-});
+})
 
-self.addEventListener('fetch', event => {
-    console.log(`Trying to fetch ${event.request.url}`);
-    event.respondWith(checkCache(event.request));
-});
+//activate event
+self.addEventListener('activate', evt => {
+  console.log('service worker activated');
+})
+
+//fetch event
+self.addEventListener('fetch', evt => {
+  console.log('fetch Event', evt);
+})
 
 async function checkCache(req) {
     const cachedResponse = await caches.match(req);
