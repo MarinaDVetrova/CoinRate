@@ -1,1 +1,1 @@
-# CoinRate
+# Конвертер валют CoinRate
