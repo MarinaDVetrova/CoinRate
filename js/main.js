@@ -4,7 +4,7 @@ const addCurrencyBtn = document.querySelector(".add-currency-btn");
 const addCurrencyList = document.querySelector(".add-currency-list");
 const currenciesList = document.querySelector(".currencies");
 
-let dataURL = "http://api.exchangeratesapi.io/v1/latest?access_key=d204c5aa1d1b58d37e85e200a29eb6cc";
+var dataURL = require('../latest.json');
 
 const initiallyDisplayedCurrencies = ["q","BTC", "RUB", "USD", "EUR", "GBP", "JPY"];
 let baseCurrency;
