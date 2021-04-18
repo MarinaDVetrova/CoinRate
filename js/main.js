@@ -4,7 +4,7 @@ const addCurrencyBtn = document.querySelector(".add-currency-btn");
 const addCurrencyList = document.querySelector(".add-currency-list");
 const currenciesList = document.querySelector(".currencies");
 
-var dataURL = require('../latest.json');
+const dataURL = "https://api.currencyfreaks.com/latest?apikey=499c5ebc381243939c9fe3182e9eab87";
 
 const initiallyDisplayedCurrencies = ["q","BTC", "RUB", "USD", "EUR", "GBP", "JPY"];
 let baseCurrency;
@@ -353,7 +353,7 @@ fetch(dataURL)
   .then(res => res.json())
   .then(data => {
     document.querySelector(".date").textContent = data.date;
-    data.rates["EUR"] = 1;
+    data.rates["USD"] = 1;
     currencies = currencies.filter(currency => data.rates[currency.abbreviation]);
     currencies.forEach(currency => currency.rate = data.rates[currency.abbreviation]);
     populateAddCyrrencyList();
