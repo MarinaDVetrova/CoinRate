@@ -15,7 +15,7 @@ body {
 }
 .container {
   width: 500px;
-  margin: 20px auto;
+  margin: 10px auto;
   user-select: none;
   overflow-x: hidden;
   position: relative;
@@ -35,7 +35,7 @@ body {
   padding: 0.75rem 2rem 1rem 0;
 }
 ul.currencies {
-  height: calc(100vh - 40px - 100px - 40px - 58px);
+  height: calc(95vh - 40px - 100px - 40px - 58px);
   background-color: #222646;
   padding: 0 1.5rem 1rem 1.5rem;
   overflow-y: auto;
