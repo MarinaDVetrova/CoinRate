@@ -119,7 +119,7 @@ ul.add-currency-list {
   background-color: #f1f1f1;
   color: #333;
   width: 100%;
-  height: calc(100vh - 40px - 100px - 55px);
+  height: calc(95vh - 40px - 100px - 55px);
   overflow-y: auto;
   transition: all 0.25s;
 }
@@ -180,13 +180,13 @@ ul.add-currency-list li span {
 @media (max-width: 600px) {
   html { font-size: 14px; }
   .container { width: 100%; margin: 0 auto; }
-  ul.currencies { height: calc(100vh - 70px - 30px - 30px); }
+  ul.currencies { height: calc(95vh - 70px - 30px - 30px); }
   .header h1 { font-size: 2rem; }
   .flag { width: 3rem; height: 2rem; }
   .info .input span { font-size: 1.25rem; width: 3.5rem; }
   .info .input input { font-size: 1.25rem; width: 76%;}
   .info .currency-name { margin-left: 3.5rem; }
   .info .base-currency-rate { margin-left: 3.5rem; }
-  ul.add-currency-list { bottom: 40px; height: calc(100vh - 60px - 51px); }
+  ul.add-currency-list { bottom: 40px; height: calc(95vh - 60px - 51px); }
   .add-currency-btn i { left: 25%; top:0.65rem; }
 }
