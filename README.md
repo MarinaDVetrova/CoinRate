@@ -8,4 +8,4 @@
 
 Источник получения API пришлось изменить, также был изменен дизайн и добавлено цифровое золото ₿
 
-<img src="https://raw.githubusercontent.com/MarinaDVetrova/CoinRate/master/images/final.gif" alt="CoinRate">
+<img src="https://raw.githubusercontent.com/MarinaDVetrova/CoinRate/master/images/final.gif" width="100px" alt="CoinRate">
