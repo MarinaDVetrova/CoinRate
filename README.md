@@ -4,7 +4,7 @@
 
 ## Описание проекта
 
-Сайт создан по мануалу https://www.youtube.com/watch?v=ARBvYDNeNdM & https://www.youtube.com/watch?v=F4TfBopAmaY
+Сайт создан по мануалу https://www.youtube.com/watch?v=ARBvYDNeNdM & https://www.youtube.com/watch?v=F4TfBopAmaY  :shipit:
 
 Источник получения API пришлось изменить, также был изменен дизайн и добавлено цифровое золото ₿
 
