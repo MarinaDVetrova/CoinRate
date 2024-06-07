@@ -61,6 +61,8 @@ ul.currencies li:last-child {
 ul.currencies li.base-currency {
   background-color: #111c28;
 }
+
+
 .flag {
   width: 60px;
   height: 40px;
