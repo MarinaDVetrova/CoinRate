@@ -14,7 +14,6 @@ body {
   color: #fff;
 }
 
-
 .container {
   width: 500px;
   margin: 10px auto;
@@ -22,8 +21,6 @@ body {
   overflow-x: hidden;
   position: relative;
 }
-
-
 
 .header {
   background-color: #111c28;
@@ -57,11 +54,9 @@ ul.currencies li:last-child {
   margin-bottom: 0;
 }
 
-
 ul.currencies li.base-currency {
   background-color: #111c28;
 }
-
 
 .flag {
   width: 60px;
@@ -69,8 +64,6 @@ ul.currencies li.base-currency {
   border: 1px solid #fff;
   vertical-align: top;
 }
-
-
 
 .info {
   display: inline-block;
@@ -119,6 +112,7 @@ ul.currencies li .close:hover {
 ul.currencies::-webkit-scrollbar {
   width: 5px;
 }
+
 ul.currencies::-webkit-scrollbar-thumb {
   background-color: #2d2d37;
   border-bottom: 1rem solid #55d7bf;
