@@ -43,6 +43,8 @@ ul.currencies {
   padding: 0 1.5rem 1rem 1.5rem;
   overflow-y: auto;
 }
+
+
 ul.currencies li {
   background-color: #232a51;
   border-radius: 5px;
