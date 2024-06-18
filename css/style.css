@@ -89,16 +89,19 @@ ul.currencies li.base-currency {
   padding: 0.3rem;
   margin-bottom: 0.75rem;
 }
+
 .info .currency-name {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
   margin-left: 4rem;
 }
+
 .info .base-currency-rate {
   font-size: 0.8rem;
   margin-left: 4rem;
 }
+
 ul.currencies li .close {
   position: absolute;
   top: 0;
